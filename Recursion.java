@@ -40,3 +40,33 @@ class Solution {
 
 	}
 }
+
+//12.02.22
+// Power of four https://leetcode.com/problems/power-of-four/
+class Solution {
+    public boolean isPowerOfFour(int n) {
+                
+        if(n == 0) return false;
+        if(n == 1) return true;
+        
+        if(n % 4 != 0) return false;
+        
+        return isPowerOfFour(n/4);    
+    }
+}
+//Power of Three https://leetcode.com/problems/power-of-three/
+class Solution {
+    public boolean isPowerOfThree(int n) {
+                
+        if(n == 0) return false;
+        if(n == 1) return true;
+        
+        if(n % 3 != 0) return false;
+        
+        return isPowerOfThree(n/3);    
+    }
+}
+
+
+
+
