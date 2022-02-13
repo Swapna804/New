@@ -67,6 +67,17 @@ class Solution {
     }
 }
 
-
+//Find Target Indices After Sorting Array
+class Solution {
+    public List<Integer> targetIndices(int[] nums, int target) {
+          Arrays.sort(nums);
+	    ArrayList<Integer> ans = new ArrayList<Integer>();
+		 
+        for(int i=0;i<nums.length;i++){
+            if(nums[i] == target) ans.add(i);
+        }
+        return ans;  
+    }
+}
 
 
